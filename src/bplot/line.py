@@ -38,8 +38,8 @@ def line(
     Returns
     -------
 
-    out : matplotlib.pyplot.Axes
-        The `Axes` onto which the box was drawn.
+    out : matplotlib.pyplot.Line2D list
+        The `Line2D` objects representing the plotted data.
     """
 
     x, y, ax = check_data(x, y, ax)
@@ -107,8 +107,8 @@ def line_h(
     Returns
     -------
 
-    out : matplotlib.pyplot.Axes
-        The `Axes` onto which the box was drawn.
+    out : matplotlib.collections.LineCollection
+        The `LineCollection` of created lines to draw.
 
    """
     _, y, ax = check_data(None, y, ax)
@@ -176,8 +176,8 @@ def line_v(
     Returns
     -------
 
-    out : matplotlib.pyplot.Axes
-        The `Axes` onto which the box was drawn.
+    out : matplotlib.collections.LineCollection
+        The `LineCollection` of created lines to draw.
 
    """
     x, _, ax = check_data(x, None, ax)
