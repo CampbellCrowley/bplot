@@ -4,10 +4,10 @@ import matplotlib
 if matplotlib.get_backend() == 'Agg':
   import platform
   if platform.system() == 'Darwin':
-    print("Forcing backend to MacOSX")
+    # Force backend to MacOSX
     matplotlib.use("MacOSX")
-  else:
-    print("Backend is 'Agg'. Plotting will be unsupported until TK is installed.")
+  # else:
+    # No supported backend ready.
 
 import matplotlib.pyplot as plt
 
